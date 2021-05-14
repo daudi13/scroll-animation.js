@@ -29,10 +29,23 @@ body {
     max-width: 500px;
     padding: 30px;
     border-radius: 20px;
-    transform: all .5s ease;
-    box-shadow: 10px 15px 25px rgba(0,0,0,0.2);
+    transform: translateX(250%);
+    transition: transform 0.5 ease;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin: 20px;
 }
 
 .container .box + .box {
     margin-top: 30px;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-200%);
+}
+
+.box.show {
+    transform: translateX(0);
 }
