@@ -13,7 +13,7 @@ body {
     min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
     background: beige;
-    
+    overflow-x: hidden;
 }
 
 .container {
@@ -29,9 +29,10 @@ body {
     max-width: 500px;
     padding: 30px;
     border-radius: 20px;
-    transform: translateX(250%);
+    transform: translateX(400%);
     transition: transform 0.5 ease;
     box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    
 }
 
 h2 {
@@ -43,9 +44,10 @@ h2 {
 }
 
 .box:nth-of-type(even) {
-    transform: translateX(-200%);
+    transform: translateX(-400%);
 }
 
 .box.show {
     transform: translateX(0);
 }
+
