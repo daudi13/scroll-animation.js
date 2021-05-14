@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,400&display=swap');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -9,5 +11,28 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background: beige;
     
+}
+
+.container {
+    margin: 50px auto;
+    
+}
+
+.container .box {
+    background: rgba(3, 46, 82, 0.932);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    transform: all .5s ease;
+    box-shadow: 10px 15px 25px rgba(0,0,0,0.2);
+}
+
+.container .box + .box {
+    margin-top: 30px;
 }
